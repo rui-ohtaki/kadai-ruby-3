@@ -1,5 +1,9 @@
+require './animal'
+require './thinkable'
+
 #<を使って、Animalクラスを継承する記述を入れてください。
-Class human < Animal
+class Human < Animal
+
 
 #Thinkableモジュールのthinkメソッドを、
 #このクラスで使えるようにしたいので、Thinkableモジュールを include してください。
@@ -12,9 +16,9 @@ Class human < Animal
 #initializeに名前・年齢・趣味の情報を格納する引数を設定し、
 #処理内容として名前・年齢・趣味の各変数を引数の情報で初期化するようにしてください。
 #引数の名前は自由とします。
-    def initialize(name,age,hobby)
-        self.name = name
-        self.age = age
-        self.hobby = hobby
+    def initialize(name,age,think)
+        @name = name
+        @age = age
+        @think = think
     end
 end
