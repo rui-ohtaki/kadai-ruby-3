@@ -1,14 +1,13 @@
 class Animal
-    attr_accessor :name
-    attr_accessor :age
+    attr_accessor :name, :age
 
     def initialize(name, age)
-      @name = name
-      @age = age
+      self.name = name
+      self.age = age
     end
 
     def say
-      puts "#{name}です。#{age}歳です。"
+      puts "#{self.name}です。#{self.age}歳です。"
     end
     
 end

@@ -1,7 +1,7 @@
 module Thinkable
 
   def think
-    puts "#{@think}について考えています。"
+    puts "#{self.hobby}について考えています。"
   end
   
 end
