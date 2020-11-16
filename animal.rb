@@ -1,6 +1,6 @@
 class Animal
-  attr_accessor :name
-  attr_accessor :age
+    attr_accessor :name
+    attr_accessor :age
 
     def initialize(name, age)
       @name = name
